@@ -193,7 +193,7 @@ app.get("/checkpassword",async(req,res)=>{
         });
 
         if(result){
-                    res.redirect(`http://127.0.0.1:5500/login/frontend/reset-password.html?uid=${uid}`)
+                    res.redirect(`https://romantic-colden-3ef783.netlify.app/reset-password.html?uid=${uid}`)
         }
         else{
             res.send("link is not available");
