@@ -136,7 +136,7 @@ app.post("/forget-password",async(req,res)=>{
                 
                 let api="https://shailesh-reset-password.herokuapp.com/checkpassword?reset_string"
                 await transporter.sendMail({
-                    from: `Short URL <${process.env.MAIL_USERNAME}>`, // sender address
+                    from: `Reset Password <${process.env.MAIL_USERNAME}>`, // sender address
                     to: `${req.body.email}`, // list of receivers
                     subject: "Change Password", // Subject line
                     html: `<b>Click the Link to reset your password.</b><br><p>${api}=${str}</p>`,
