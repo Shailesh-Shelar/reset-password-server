@@ -134,7 +134,7 @@ app.post("/forget-password",async(req,res)=>{
             });
             let str = `${str1}_._${data._id}`;
                 
-                let api="http://localhost:3000/checkpassword?reset_string"
+                let api="https://shailesh-reset-password.herokuapp.com/checkpassword?reset_string"
                 await transporter.sendMail({
                     from: `Short URL <${process.env.MAIL_USERNAME}>`, // sender address
                     to: `${req.body.email}`, // list of receivers
