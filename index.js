@@ -255,6 +255,6 @@ app.post("/resetpassword/:uid",async(req,res)=>{
     }
 });
 
-app.listen(3000,()=>{
-    console.log("app is running on port");
+app.listen(port,()=>{
+    console.log(`App is Running on PORT ${port}`);
 })
